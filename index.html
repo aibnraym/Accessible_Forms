@@ -36,6 +36,7 @@
 					type="text"
 					name="name"
 					pattern="^([\D]{2,30}\s+)+([a-zA-Z]{2,30})$"
+					placeholder="Muhammad Ali"
 					required
 					aria-required="true"
 				/>
@@ -45,6 +46,7 @@
 					type="email"
 					name="email"
 					autocomplete="email"
+					placeholder="muhammad_ali@gmail.com"
 					required
 					aria-required="true"
 				/>
@@ -54,6 +56,8 @@
 					type="tel"
 					name="tel"
 					autocomplete="tel"
+					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+					placeholder="857-555-5555"
 					required
 					aria-required="true"
 				/>
@@ -65,7 +69,7 @@
 					<label for="email-select">Email</label>
 				</fieldset>
 					<label for="stateChoice">State of Residence</label>
-					<input list="states" id="stateChoice" name="stateChoice" type="text" required/>
+					<input list="states" id="stateChoice" name="stateChoice" type="text" placeholder="e.g., SC South Carolina" required/>
 					<datalist id="states">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
@@ -125,7 +129,7 @@
 						<option value="WY">Wyoming</option>
 					</datalist>
 				<label for="message">Message</label>
-				<textarea id="message" required></textarea>
+				<textarea id="message" placeholder="Please type your message or inquiry here..." required></textarea>
 				<input type="submit" name="submit" value="Submit"/>
 			</form>
 		</article>
